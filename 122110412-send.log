@@ -27,3 +27,13 @@
   <level>FINE</level>
   <message>File 122110412-GABRIELE MEDEIROS CALAFANGE.zip was received. It was sent by GABRIELE MEDEIROS CALAFANGE from IP 192.168.0.18 at 13-09-2023 17*10*55</message>
 </record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-09-13T20:09:55.593-0300</date>
+  <logger>GABRIELE MEDEIROS CALAFANGE</logger>
+  <level>FINE</level>
+  <message>File 122110412-GABRIELE MEDEIROS CALAFANGE.zip was received. It was sent by GABRIELE MEDEIROS CALAFANGE from IP 10.0.0.7 at 13-09-2023 20*09*55</message>
+</record>

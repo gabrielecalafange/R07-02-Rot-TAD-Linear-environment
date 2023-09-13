@@ -18,7 +18,7 @@ public class QueueImpl<T> implements Queue<T> {
 
 	@Override
 	public boolean isEmpty() {
-		return tail == -1;
+		return this.tail == -1;
 	}
 
 	@Override
@@ -27,8 +27,9 @@ public class QueueImpl<T> implements Queue<T> {
 	}
 
 	private void shiftLeft() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
+		for (int i = 1; i < array.length; i++) {
+			this.array[i-1] = this.array[i];
+		}
 	}
 
 	@Override
@@ -45,9 +46,11 @@ public class QueueImpl<T> implements Queue<T> {
 	public T dequeue() throws QueueUnderflowException {
 		if (isEmpty()) {
 			throw new QueueUnderflowException();
+		} else {
+			T out = array[0];
+			shiftLeft();
+			return out;
 		}
-		T output = array[array.length - tail - 1];
-		return output;
 	}
 
 }
